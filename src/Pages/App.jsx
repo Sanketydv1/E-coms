@@ -1,13 +1,15 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Navbar from "./Partials/Navbar";
-import Footer from "./Partials/Footer";
+import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
 import FeaturesPage from "./FeaturesPage";
 import HomePage from "./HomePage";
 import AboutPage from "./AboutPage";
 import ShopPage from "./ShopPage";
 import TestimonialsPage from "./TestimonialsPage";
-import Error404Page from "./Partials/Error404Page";
+import Error404Page from "./Components/Error404Page";
+import ContactUsPage from "./ContactUsPage";
+
 export default function App() {
   return (
     <>
@@ -19,6 +21,8 @@ export default function App() {
           <Route path="/shop" element={<ShopPage />} />
           <Route path="/features" element={<FeaturesPage />} />
           <Route path="/testimonials" element={<TestimonialsPage />} />
+          <Route path="/contactus" element={<ContactUsPage />} />
+
           <Route path="/*" element={<Error404Page />} />
         </Routes>
         <Footer />

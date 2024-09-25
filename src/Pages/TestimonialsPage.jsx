@@ -1,8 +1,8 @@
 import React from "react";
-import HeroSection from "./Partials/HeroSection";
-import Testimonials from "./Partials/Testimonials";
-import Features from "./Partials/Features";
-import Banner from "./Partials/Banner";
+import HeroSection from "./Components/HeroSection";
+import Testimonials from "./Components/Testimonials";
+import Features from "./Components/Features";
+import Banner from "./Components/Banner";
 
 export default function TestimonialsPage() {
   return (

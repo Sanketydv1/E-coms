@@ -1,10 +1,10 @@
 import React from "react";
-import Features from "./Partials/Features";
-import AboutUs from "./Partials/AboutUs";
-import ProductSlider from "./Partials/ProductSlider";
-import ProductComponent from "./Partials/ProductComponent";
-import Banner from "./Partials/Banner";
-import Testimonials from "./Partials/Testimonials";
+import Features from "./Components/Features";
+import AboutUs from "./Components/AboutUs";
+import ProductSlider from "./Components/ProductSlider";
+import ProductComponent from "./Components/ProductComponent";
+import Banner from "./Components/Banner";
+import Testimonials from "./Components/Testimonials";
 
 export default function HomePage() {
   return (
