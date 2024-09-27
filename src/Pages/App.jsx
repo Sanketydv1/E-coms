@@ -10,6 +10,9 @@ import TestimonialsPage from "./TestimonialsPage";
 import Error404Page from "./Components/Error404Page";
 import ContactUsPage from "./ContactUsPage";
 
+import AdminHome from "./Admin/Home/AdminHome";
+import AdminMainCategory from "./Admin/Maincategory/AdminMainCategory";
+
 export default function App() {
   return (
     <>
@@ -22,6 +25,10 @@ export default function App() {
           <Route path="/features" element={<FeaturesPage />} />
           <Route path="/testimonials" element={<TestimonialsPage />} />
           <Route path="/contactus" element={<ContactUsPage />} />
+
+          {/* Admin Routes */}
+          <Route path="/admin" element={<AdminHome />} />
+          <Route path="/admin/maincategory" element={<AdminMainCategory />} />
 
           <Route path="/*" element={<Error404Page />} />
         </Routes>

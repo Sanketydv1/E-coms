@@ -82,12 +82,13 @@ export default function Navbar() {
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
               <div class="navbar-nav mx-auto py-0">
-                <Link to="/" class="nav-item nav-link active"> Home </Link>
+                <Link to="/" class="nav-item nav-link"> Home </Link>
                 <Link to="about" class="nav-item nav-link"> About </Link>
                 <Link to="shop" class="nav-item nav-link"> shop </Link>
                 <Link to="features" class="nav-item nav-link"> Features </Link>
                 <Link to="testimonials" class="nav-item nav-link"> Testimonials </Link>
-                {/* <Link to="contactus" class="nav-item nav-link"> ContactUs </Link> */}
+                <Link to="admin" class="nav-item nav-link"> Admin </Link>
+                <Link to="contactus" class="nav-item nav-link"> Contact </Link> </div>
                 
 
                 {/* <div class="nav-item dropdown">
@@ -116,9 +117,7 @@ export default function Navbar() {
                     </a>
                   </div>
                 </div> */}
-                <Link to="contactus" class="nav-item nav-link"> Contact </Link>
-              </div>
-              <Link to="#" class="btn btn-primary rounded-pill py-2 px-4"> Login </Link>
+                <Link to="#" class="btn btn-primary rounded-pill py-2 px-4"> Login </Link>
             </div>
           </nav>
         </div>
