@@ -12,6 +12,7 @@ import ContactUsPage from "./ContactUsPage";
 
 import AdminHome from "./Admin/Home/AdminHome";
 import AdminMainCategory from "./Admin/Maincategory/AdminMainCategory";
+import AdminCreateMainCategory from "./Admin/Maincategory/AdminCreateMainCategory";
 
 export default function App() {
   return (
@@ -29,6 +30,7 @@ export default function App() {
           {/* Admin Routes */}
           <Route path="/admin" element={<AdminHome />} />
           <Route path="/admin/maincategory" element={<AdminMainCategory />} />
+          <Route path="/admin/maincategory/create" element={<AdminCreateMainCategory />} />
 
           <Route path="/*" element={<Error404Page />} />
         </Routes>

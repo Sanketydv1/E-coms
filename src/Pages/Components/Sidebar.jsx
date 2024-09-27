@@ -14,7 +14,7 @@ export default function Sidebar() {
           <span className="float-end">Home</span>
         </Link>
         <Link
-          to="/admin"
+          to="/admin/maincategory"
           className="list-group-item list-group-item-action bg-primary text-light mb-1"
           aria-current="true"
         >
@@ -22,7 +22,7 @@ export default function Sidebar() {
           <span className="float-end">Maincategory</span>
         </Link>
         <Link
-          to="/admin"
+          to="/admin/subcategory"
           className="list-group-item list-group-item-action bg-primary text-light mb-1"
           aria-current="true"
         >
@@ -30,7 +30,7 @@ export default function Sidebar() {
           <span className="float-end">Subcategory</span>
         </Link>
         <Link
-          to="/admin"
+          to="/admin/brand"
           className="list-group-item list-group-item-action bg-primary text-light mb-1"
           aria-current="true"
         >
@@ -38,7 +38,7 @@ export default function Sidebar() {
           <span className="float-end">Brand</span>
         </Link>
         <Link
-          to="/admin"
+          to="/admin/product"
           className="list-group-item list-group-item-action bg-primary text-light mb-1"
           aria-current="true"
         >
@@ -46,7 +46,7 @@ export default function Sidebar() {
           <span className="float-end">Product</span>
         </Link>
         <Link
-          to="/admin"
+          to="/admin/testimonial"
           className="list-group-item list-group-item-action bg-primary text-light mb-1"
           aria-current="true"
         >
@@ -54,7 +54,7 @@ export default function Sidebar() {
           <span className="float-end">Testimonial</span>
         </Link>
         <Link
-          to="/admin"
+          to="/admin/users"
           className="list-group-item list-group-item-action bg-primary text-light mb-1"
           aria-current="true"
         >
@@ -62,7 +62,7 @@ export default function Sidebar() {
           <span className="float-end">Users</span>
         </Link>
         <Link
-          to="/admin"
+          to="/admin/newsletter"
           className="list-group-item list-group-item-action bg-primary text-light mb-1"
           aria-current="true"
         >
@@ -70,7 +70,7 @@ export default function Sidebar() {
           <span className="float-end">Newsletter</span>
         </Link>
         <Link
-          to="/admin"
+          to="/admin/contactus"
           className="list-group-item list-group-item-action bg-primary text-light mb-1"
           aria-current="true"
         >
@@ -78,7 +78,7 @@ export default function Sidebar() {
           <span className="float-end">Contact Us</span>
         </Link>
         <Link
-          to="/admin"
+          to="/admin/checkout"
           className="list-group-item list-group-item-action bg-primary text-light mb-1"
           aria-current="true"
         >
