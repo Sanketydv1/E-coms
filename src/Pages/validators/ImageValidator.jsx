@@ -1,13 +1,12 @@
 export default function FormValidator(e) {
-  let { name, value } = e.target;
-  switch (name) {
-    case "name":
-      if (!value || value === "") return name + " Field is Mandotry";
-      else if (value.length < 3 || value.length > 50)
-        return name + " Field value must be withing 3-50";
-      else return "";
-
-    default:
-      return "";
-  }
+	let { files } = e.target;
+	if (files[0].length === 0) return " Pic is Mandatory";
+	else if (files[0].length === 1) {
+		if (files[0].size > 1048576)
+			return "Pic size is more then 1MB. Please uploaad an image upto 1MB";
+		else if (files[0].type === "image/jpg" || files[0].type === "image/jpeg" || files[0].type === "image/png" || files[0].type === "image/gip")
+			return "";
+		else
+			return "invalid pic please upload following formates : .jpg,.jpeg,.png,.gip";
+	}
 }
