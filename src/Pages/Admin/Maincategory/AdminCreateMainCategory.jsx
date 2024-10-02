@@ -23,7 +23,7 @@ export default function AdminCreateMainCategory() {
 
   function getInputData(e) {
     var name = e.target.name;
-    var value = e.target.files ? e.target.files[0].name : e.target.value;
+    var value = e.target.files ? "/maincategory/" + e.target.files[0].name : e.target.value;
     if (name !== "active") {
       seteErrorMessage((old) => {
         return {
