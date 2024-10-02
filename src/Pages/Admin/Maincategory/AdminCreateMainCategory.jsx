@@ -13,7 +13,7 @@ export default function AdminCreateMainCategory() {
     active: "true",
   });
 
-  let [errorMessage, seteErrorMessage] = useState({
+  let [errorMessage, setErrorMessage] = useState({
     name: "Name Field is Mandotary",
     pic: "Pic Field is Mandotary",
   });
@@ -25,7 +25,7 @@ export default function AdminCreateMainCategory() {
     var name = e.target.name;
     var value = e.target.files ? "/maincategory/" + e.target.files[0].name : e.target.value;
     if (name !== "active") {
-      seteErrorMessage((old) => {
+      setErrorMessage((old) => {
         return {
           ...old,
           [name]: e.target.files ? ImageValidator(e) : formValidator(e),
@@ -46,7 +46,7 @@ export default function AdminCreateMainCategory() {
     if (error)
       setShow(true)
     else {
-      let response = await fetch("http://localhost:8000/maincategory", {
+      let response = await fetch("http://localhost:8000/maincategory  ", {
         method: "POST",
         headers: {
           "content-type": "application/json"
