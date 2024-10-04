@@ -46,7 +46,7 @@ export default function AdminCreateMainCategory() {
     if (error)
       setShow(true)
     else {
-      let response = await fetch("http://localhost:8000/maincategory  ", {
+      let response = await fetch("http://localhost:8000/maincategory", {
         method: "POST",
         headers: {
           "content-type": "application/json"
@@ -56,7 +56,7 @@ export default function AdminCreateMainCategory() {
       })
       response = await response.json()
       if (response)
-        navigate("/admin/maincategry")
+        navigate("/admin/maincategory")
       else
         alert("something went wrong")
     }
